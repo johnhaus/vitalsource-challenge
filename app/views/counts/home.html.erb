@@ -1,19 +1,26 @@
-<h1>Hello</h1>
-<div>
-  User name: <%= current_user.name %>
-</div>
-<div>
-  User email: <%= current_user.email %>
-</div>
-<div>
-  Number of logins: <%= current_user.sign_in_count %>
-</div>
-<div>
-  Last login: <%= current_user.last_sign_in_at %>
-</div>
-<div>
-  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-</div>
-<div>
-  <%= link_to('Edit my account', edit_user_registration_path) %>
+<div class="container">
+  <div class="row">
+    <div class="center center-large">
+      <h1>Hello <%= current_user.name %>!</h1>
+      <h2>Your details are included below</h2>
+      <div>
+        User name: <%= current_user.name %>
+      </div>
+      <div>
+        User email: <%= current_user.email %>
+      </div>
+      <div>
+        Number of logins: <%= current_user.sign_in_count %>
+      </div>
+      <div>
+        Last login: <%= current_user.last_sign_in_at %>
+      </div>
+      <div>
+        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+      </div>
+      <div>
+        <%= link_to('Edit my account', edit_user_registration_path) %>
+      </div>
+    </div>
+  </div>
 </div>
