@@ -1,24 +1,24 @@
-# README
+This is a simple Ruby app using the Rails framework.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version is 2.2.4 and this app uses Webpacker and MySQL
 
-Things you may want to cover:
+After installing the app, run
+  bundle
+and then run
+  yarn
+to install dependencies
 
-* Ruby version
+This app is designed to use MySQL. To set it up create a .env file and add the following line, changing the part that states CHANGE_THIS_TO_YOUR_MYSQL_PASSWORD to your password for MySQL
 
-* System dependencies
+  MYSQL_KEY=CHANGE_THIS_TO_YOUR_MYSQL_PASSWORD
 
-* Configuration
+To create the database, run
+  rails db:create
+  rails db:migrate
 
-* Database creation
+and if you want to use the seed file run
+  rails db:seed
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run
+  rails s
+to start the server
